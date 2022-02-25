@@ -366,6 +366,30 @@ template {
   margin-right: auto;
   margin-left: 108px;
 }
+.navbar__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0A223D;
+  color: #fff;
+}
+.navbar__menu__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar__button {
+  background-color: #0A223D;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.logo {
+  width: 177px;
+}
 
 .search {
   display: flex;
@@ -411,4 +435,37 @@ template {
   line-height: 18px;
   margin-left: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .navbar__top {
+    padding: 30 0;
+  }
+  .navbar__search {
+    margin-left: auto;
+    max-width: 340px;
+  }
+
+  .navbar__menu {
+    padding: 22 0;
+  }
+  .navbar__menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
