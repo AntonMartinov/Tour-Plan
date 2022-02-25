@@ -464,6 +464,9 @@ template {
   }
   .navbar__search {
     margin-left: auto;
+  }
+
+  .search__input {
     max-width: 340px;
   }
 
@@ -498,6 +501,7 @@ template {
     height: 11px;
     background-color: #fff;
     cursor: pointer;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
