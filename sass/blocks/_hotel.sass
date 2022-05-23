@@ -45,21 +45,15 @@
   &__counter
     font-size: 14px
     line-height: 18px
+.hotel-grid
+  display: flex
+  justify-content: space-between
 .swiper
-  width: 100%
-  height: 450px
-  position: relative
-  border-radius: 8px
-  &::after
-    position: absolute
+  &-wrapper
     width: 100%
-    height: 100%
-    top:0
-    right: 0
-    left:0
-    bottom: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    z-index:10
+    height: 450px
+    position: relative
+    border-radius: 8px
 .slider
   width: 728px
   &-button
@@ -81,3 +75,66 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+// стили для карточки price
+.price-card
+  background-color: $background-color
+  height: 210px
+  width: 350px
+  border: 1px
+  border-collapse: $background-color
+  border-radius: 8px
+  justify-content: space-between
+  padding: 30px 30px 26px 26px
+// стили для содержимого карточки price
+.first-group
+  display: flex
+  justify-content: space-between
+.left__column,.rite__column
+  padding: 0
+  margin: 0
+  color: #FFFFFF
+  font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif
+  font-size: 10px
+.prise
+  font-size: 24px
+  height: 33px
+.time_of_day
+  font-size: 12px
+.rite__column
+  font-size: 12px
+  width: 80px
+  height: 40px
+  padding: 0
+.second__group
+  display: flex
+  justify-content: space-between
+  margin-top: 10px
+  text-align: center
+.left__text
+  color: #ffff
+  size: 25px
+  font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif
+  text-align: center
+.rite__number
+  text-align: center
+  color: #ffff
+  size: 18px
+  height: 25px
+  padding: 0
+.number_phone
+  text-align: center
+  padding: 0
+  width: 14px
+  height: 14px
+.other_options
+  height: 45px
+  width: 100%
+  color: #ffff
+  background-color: $primary
+  border: $primary
+  border: 1px
+  border-radius: 4px
+  margin-top: 20px
+  cursor: pointer
+  font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif
+  font-size: 14px
